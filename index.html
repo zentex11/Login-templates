@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+
+    
+    
+    <div class="container">
+        <div class="curved-shape"></div>
+        <div class="curved-shape2"></div>
+        <div class="form-box Login">
+            <h2 class="animation" style="--D:0">Login</h2>
+            <form action="">
+                
+                <div class="input-box animation" style="--D:1">
+                    <input type="text" required>
+                    <label for="">Username</label>
+                    <i class='bx bxs-user'></i>
+                    
+                </div>
+                
+                
+               
+                <div class="input-box animation" style="--D:2">
+                    <input type="text" required>
+                    <label for="">Password</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+
+                <div class="input-box animation" style="--D:3"> 
+                    <button class="btn" type="submit">Login</button>
+                </div>
+                          
+    
+                        
+                   
+                
+                <div class="regi-link animation" style="--D:4">
+                    <p>Don't have an account ? <a href="#" class="SignUpLink">Sign Up</a></p>
+                    
+                    <h6 class="forgot-password"><a href="#">Forgot your password?</a></้>
+                  
+                      <!-- ตัวเลือก Remember Me -->
+                      <div class="remember-me">
+                        <input type="checkbox" id="rememberMe" name="rememberMe">
+                      <label for="rememberMe">Remember Me</label>
+                     </div>
+                        
+                </div>
+            </form>
+        </div>  
+        
+        <div class="info-content Login">
+            <h2 class="animation" style="--D:0">WECOME BACK!</h2>
+            <p class="animation" style="--D:1">สวัสดีครับคนน่ารัก</p>
+        </div>
+
+        
+
+        <div class="form-box Register">
+            
+
+            
+            <h2 class="animation" style="--li:17;">Register</h2>
+            <form action="#">
+                <div class="input-box animation" style="--li:18;" >
+                    <input type="text" required>
+                    <label for="">Username</label>
+                    <i class='bx bxs-user'></i>
+                </div>
+
+                
+                
+               
+                <div class="input-box animation" style="--li:19;" >
+                    <input type="password" required>
+                    <label for="">Password</label>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><i class="fa fa-lock"></i></span>
+                    <input type="password" required id="password" onkeyup="checkPasswordStrength()">
+                    <label>Confirm Password</label>
+                    <i class='bx bxs-lock-alt'></i>
+                    <div id="passwordStrength" class="strength-bar"></div>
+                </div>
+                
+                <div class="input-box animation" style="--li:20;"> 
+                    <button class="btn" type="submit">Register</button>
+                </div>
+                <div class="regi-link animation" style="--li:21;">
+                    <p>Don't have an account ? <a href="#" class="SignInLink">Sign In</a></p>
+                </div>
+
+                
+            </form>
+        </div>
+<!-- การแจ้งเตือน -->
+<div id="loginNotification" class="notification" style="display: none;">
+    <p>Login successful!</p>
+</div>
+
+        <div class="info-content Register">
+            <h2 class="animation" style="--li:17;">WECOME BACK!</h2>
+            <p class="animation" style="--li:18;">สวัสดีฮาฟฟุ่ววว</p>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
